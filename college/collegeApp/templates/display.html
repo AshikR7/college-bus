@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    td {
+  text-align: center;
+}
+  </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+<table style="width:100%">
+  <h1 style="margin-left:45%">Morning</h1>
+  <tr>
+    <th>Bus</th>
+    <th>Attendance</th>
+    <th>Time</th>
+  </tr>
+    {% for i,j,k in morning %}
+      <tr>
+        <td>{{i}}</td>
+        <td>{{j}}</td>
+        <td>{{k}}</td>
+      </tr>
+    {% endfor %}
+
+</table>
+  </div>
+
+<div>
+<table style="width:100%">
+  <h1 style="margin-left:45%">Evening</h1>
+  <tr>
+    <th>Bus</th>
+    <th>Attendance</th>
+    <th>Time</th>
+  </tr >
+    {% for i,j,k in evening %}
+      <tr>
+        <td  >{{i}}</td>
+        <td>{{j}}</td>
+        <td>{{k}}</td>
+      </tr>
+    {% endfor %}
+
+</table>
+   </div>
+</body>
+</html>
